@@ -124,3 +124,12 @@ export const appRoutes: Route[] = [
 ];
 ```
 
+### Replace default HTML
+
+Change apps/app-shell/src/app/app.component.html
+
+```html
+<h1>App Shell</h1>
+<router-outlet></router-outlet>
+```
+
