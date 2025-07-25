@@ -1,0 +1,10 @@
+{
+  "name": "app-one-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/app-one-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["app-one"],
+  "// targets": "to see all targets run: nx show project app-one-e2e --web",
+  "targets": {}
+}

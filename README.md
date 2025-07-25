@@ -80,4 +80,12 @@ Run "nx show project app-shell" to view details about this project.
 nx run app-shell:serve
 ```
 
+### Create 2 MFE apps
+
+```shell
+npx nx generate @nrwl/angular:app apps/app-one --style=scss --routing=true --e2eTestRunner=cypress --bundler=webpack --ssr=false;npx nx generate @nrwl/angular:app apps/app-two --style=scss --routing=true --e2eTestRunner=cypress --bundler=webpack --ssr=false
+```
+
+This will create app-one and app-two
+
 
