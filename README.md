@@ -60,3 +60,18 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+## Follow This Article
+
+Following this article:
+
+https://medium.com/@disa2aka/building-modular-web-applications-a-guide-to-microfrontend-architecture-with-nx-and-angular-a5f0b397dce8
+
+### Create app-shell
+
+```shell
+npx nx generate @nrwl/angular:app apps/app-shell --style=scss --routing=true --e2eTestRunner=cypress --bundler=webpack --ssr=false
+```
+Run "nx show project app-shell" to view details about this project.
+
+

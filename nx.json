@@ -10,7 +10,10 @@
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s"
+      "!{projectRoot}/test-setup.[jt]s",
+      "!{projectRoot}/cypress/**/*",
+      "!{projectRoot}/**/*.cy.[jt]s?(x)",
+      "!{projectRoot}/cypress.config.[jt]s"
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
@@ -51,5 +54,22 @@
       "unitTestRunner": "jest"
     }
   },
-  "nxCloudAccessToken": "OGNiYzVlMDktZjY1Zi00NGI2LTg4Y2EtNTI5NzBjYTdjYjgwfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "OGNiYzVlMDktZjY1Zi00NGI2LTg4Y2EtNTI5NzBjYTdjYjgwfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    }
+  ]
 }
