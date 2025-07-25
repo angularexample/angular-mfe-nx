@@ -1,6 +1,11 @@
 {
   "name": "@angular-mfe-nx/source",
-  "version": "0.0.0",
+  "version": "18.0.0",
+  "description": "Angular 18 MFE using NX",
+  "author": {
+    "name": "JC Lango",
+    "email": "info@angularexample.com"
+  },
   "license": "MIT",
   "scripts": {},
   "private": true,
