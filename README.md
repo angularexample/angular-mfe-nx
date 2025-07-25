@@ -74,4 +74,10 @@ npx nx generate @nrwl/angular:app apps/app-shell --style=scss --routing=true --e
 ```
 Run "nx show project app-shell" to view details about this project.
 
+#### To run app-shell
+
+```shell
+nx run app-shell:serve
+```
+
 
