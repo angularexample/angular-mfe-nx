@@ -96,3 +96,12 @@ npx nx generate @nrwl/angular:lib ui --directory=libs/ui;npx nx generate @nrwl/a
 
 Accept the default options.
 
+### Add aliases
+
+Add aliases for apps to paths in tsconfig.base.json.
+
+```
+      "@angular-mfe-nx/app-two/*": ["apps/app-two/src/app/*"],
+      "@angular-mfe-nx/ui": ["libs/ui/src/index.ts"]
+```
+
