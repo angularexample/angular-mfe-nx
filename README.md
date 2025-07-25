@@ -88,4 +88,11 @@ npx nx generate @nrwl/angular:app apps/app-one --style=scss --routing=true --e2e
 
 This will create app-one and app-two
 
+### Create UI Library with button and label
+
+```shell
+npx nx generate @nrwl/angular:lib ui --directory=libs/ui;npx nx generate @nrwl/angular:component ui-button --directory=libs/ui/src/lib/ui-button --export;npx nx generate @nrwl/angular:component ui-label --directory=libs/ui/src/lib/ui-label --export
+```
+
+Accept the default options.
 
